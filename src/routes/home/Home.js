@@ -42,6 +42,14 @@ class Home extends React.Component {
     return _product.isNew == true;
   }
 
+  isNewPopular = (_product) => {
+    return _product.isPopular == true;
+  }
+
+  isNewRelevance = (_product) => {
+    return _product.productType === 'camera';
+  }
+
   handleSortByInput = (event, value) => {
     this.setState({ isNewCampaignSelected: value });
     if (value === 'lPrice') {
@@ -50,6 +58,10 @@ class Home extends React.Component {
       this.state.products = this.sortByHighPrice(this.props.products, 'productPrice');
     } else if(value === 'newItem') {
       this.state.products = this.props.products.filter(this.isNewProduct);
+    } else if(value === 'popular') {
+      this.state.products = this.props.products.filter(this.isNewPopular);
+    } else if(value === 'relevance') {
+      this.state.products = this.props.products.filter(this.isNewRelevance);
     }
   };
   render() {
