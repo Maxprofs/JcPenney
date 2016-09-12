@@ -6,6 +6,8 @@
   },
   "dependencies": {
     "babel": "^6.5.2",
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
     "babel-polyfill": "6.13.0",
     "babel-runtime": "6.11.6",
     "bluebird": "3.4.5",
@@ -182,6 +184,6 @@
     "build": "babel-node tools/run build",
     "deploy": "babel-node tools/run deploy",
     "render": "babel-node tools/run render",
-    "start": "./node_modules/.bin/babel-node tools/run start"
+    "start": "babel-node tools/run start"
   }
 }
