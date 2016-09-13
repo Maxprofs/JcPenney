@@ -9,8 +9,8 @@ export default {
   async action() {
     const products = [
 	    {
-	  	  productTitle: 'Test Title Test Title Test Title Test Title',
-	  	  productImageSrc: '',
+	  	  productTitle: '1Test Title Test Title Test Title Test Title',
+	  	  productImageSrc: 'apple-touch-icon.png',
 	  	  productPrice: 15005,
 		  productEmiPrice: 350,
 		  productFeature: [
@@ -27,8 +27,8 @@ export default {
 		  productType: 'camera',
 		},
 		{
-	  	  productTitle: 'Test Title Test Title Test Title Test Title',
-	  	  productImageSrc: '',
+	  	  productTitle: '2Test Title Test Title Test Title Test Title',
+	  	  productImageSrc: 'cam1.jpeg',
 	  	  productPrice: 15000,
 		  productEmiPrice: 350,
 		  productFeature: [
@@ -46,7 +46,7 @@ export default {
 		},
 		{
 	  	  productTitle: 'aTest Title Test Title Test Title Test Title',
-	  	  productImageSrc: '',
+	  	  productImageSrc: 'cam2.jpeg',
 	  	  productPrice: 15080,
 		  productEmiPrice: 350,
 		  productFeature: [
@@ -63,8 +63,8 @@ export default {
 		  productType: 'camera',
 		},
 		{
-	  	  productTitle: 'Test Title Test Title Test Title Test Title',
-	  	  productImageSrc: '',
+	  	  productTitle: '13Test Title Test Title Test Title Test Title',
+	  	  productImageSrc: 'cam3.jpeg',
 	  	  productPrice: 15000,
 		  productEmiPrice: 350,
 		  productFeature: [
@@ -78,8 +78,8 @@ export default {
 		  },
 		},
 		{
-	  	  productTitle: 'Test Title Test Title Test Title Test Title',
-	  	  productImageSrc: '',
+	  	  productTitle: '23Test Title Test Title Test Title Test Title',
+	  	  productImageSrc: 'cam1.jpeg',
 	  	  productPrice: 15001,
 		  productEmiPrice: 350,
 		  productFeature: [

@@ -45,7 +45,7 @@ class Product extends React.Component {
             {this.props.productDesc.productTitle}
           </div>
           <img
-            src="apple-touch-icon.png"
+            src={this.props.productDesc.productImageSrc}
             className={s.imageStyle} role="presentation"
           />
           <span className={s.spanStyle}>
