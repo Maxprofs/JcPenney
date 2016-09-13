@@ -10,7 +10,6 @@
 import React, { Component, PropTypes } from 'react';
 import emptyFunction from 'fbjs/lib/emptyFunction';
 import s from './App.css';
-import Header from '../Header';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
@@ -54,7 +53,6 @@ class App extends Component {
     return !this.props.error ? (
       <MuiThemeProvider>
         <div>
-          <Header />
           {this.props.children}
         </div>
       </MuiThemeProvider>

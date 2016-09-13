@@ -22,6 +22,7 @@ class Home extends React.Component {
     super(props);
     this.state = {
       products: this.props.products,
+      searchText: '',
     };
   }
 
@@ -50,6 +51,10 @@ class Home extends React.Component {
     return _product.productType === 'camera';
   }
 
+  isStringContains = (_product) => {
+    return _product.productTitle.includes(this.state.searchText);
+  }
+
   handleSortByInput = (event, value) => {
     this.setState({ isNewCampaignSelected: value });
     if (value === 'lPrice') {
@@ -64,6 +69,11 @@ class Home extends React.Component {
       this.state.products = this.props.products.filter(this.isNewRelevance);
     }
   };
+
+  handleSerachTextChange = (event, value) => {
+    this.state.searchText = value;
+    this.setState({ products: this.props.products.filter(this.isStringContains) });
+  };
   render() {
     return (
       <div className={s.root}>
@@ -71,6 +81,7 @@ class Home extends React.Component {
           <TextField
             hintText="Camera"
             floatingLabelText="Search"
+            onChange={this.handleSerachTextChange}
           />
           <Divider />
           <RadioButtonGroup
